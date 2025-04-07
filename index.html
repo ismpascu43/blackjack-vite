@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Juego de Blackjack</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <header class="titulo">Juego Del Blackjack</header>
+
+        <div class="game-container">
+            <div class="cards-container">
+                <section class="section_jugador">
+                    <div class="div_jugador">
+                        <h1>Jugador 1 - <small>0</small></h1>
+                        <div id="jugador-cartas">
+                            <!-- <img class="carta" src="assets/cartas/2C.png"> -->
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_computadora">
+                    <div class="div_computadora">
+                        <h1>Crupier - <small>0</small></h1>
+                        <div id="computadora-cartas">
+                            <!-- <img class="carta" src="assets/cartas/3C.png"> -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="section_botones">
+                <div id="divBotones" class="col text-center">
+                    <button id="btnNuevo" class="btn btn-danger">
+                        Nuevo Juego
+                    </button>
+                    <button id="btnPedir" class="btn btn-primary">
+                        Pedir carta
+                    </button>
+                    <button id="btnDetener" class="btn btn-primary">
+                        Detener
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div id="mensaje-resultado" class="mensaje-oculto"></div>
+
+        <div id="app"></div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
